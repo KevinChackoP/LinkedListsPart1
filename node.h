@@ -7,7 +7,7 @@
   Period 6, C++ / Data Structures
 */
 
-//Implement a header guard
+//Implemention of a header guard for header file
 #ifndef NODE_H
 #define NODE_H
 
@@ -19,13 +19,15 @@ using namespace std;
 
 //Start of the singly linked list node class for the student class
 class node {
+ //Public functions for class
  public:
   node(student* inputStudent);
   ~node();
-  student*  getStudent();
+  student* getStudent();
   void setNode(node* newNext);
   node* getNode();
 
+ //Private variables & pointers for class
  private:
   student* pupil;
   node* nextNode;
